@@ -1,57 +1,25 @@
 # Project Name
 
-(short, 1-3 sentenced, description of the project)
+azure-iot-ios-samples provides a set of easy-to-understand, continuously-tested samples for using Azure IoT Hub via Azure/azure-iot-sdk-c.
 
 ## Features
 
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
+This project showcases how to use azure-iot-sdk-c on iOS platform from CocoaPod.
 
 ## Getting Started
 
 ### Prerequisites
 
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
+- Download the code sample from [Azure samples](https://github.com/yzhong94/azure-iot-ios-sample/archive/master.zip) 
+- The latest version of [XCode](https://developer.apple.com/xcode/), running the latest version of the iOS SDK. This quickstart was tested with XCode 9.3 and iOS 11.3.
+- The latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html).
 
 ### Quickstart
-(Add steps to get up and running quickly)
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+[Send telemetry from a device to an IoT hub (Swift)](https://docs.microsoft.com/azure/iot-hub/quickstart-send-telemetry-ios)
 
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c): contains the source code for Azure IoT C SDK, as well as the platform specific adaption layer for iOS
+- [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/)
