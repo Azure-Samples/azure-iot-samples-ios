@@ -10,7 +10,6 @@ This project showcases how to use azure-iot-sdk-c on iOS platform from CocoaPod.
 
 ### Prerequisites
 
-- Download the code sample from [Azure samples](https://github.com/yzhong94/azure-iot-ios-sample/archive/master.zip) 
 - The latest version of [XCode](https://developer.apple.com/xcode/), running the latest version of the iOS SDK. This quickstart was tested with XCode 9.3 and iOS 11.3.
 - The latest version of [CocoaPods](https://guides.cocoapods.org/using/getting-started.html).
 
