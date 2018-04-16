@@ -8,10 +8,9 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    //Put you connection string and deviceID here
+    //Put you connection string here
     private let connectionString = ""
-    let deviceID = ""
-    
+
     // Select your protocol of choice: MQTT_Protocol, AMQP_Protocol or HTTP_Protocol
     // Note: HTTP_Protocol is not currently supported
     private let iotProtocol: IOTHUB_CLIENT_TRANSPORT_PROVIDER = MQTT_Protocol
@@ -75,8 +74,7 @@ class ViewController: UIViewController {
     func updateTelem() {
         let temperature = String(describing: drand48()*15 + 20)
         let humidity = String(describing: (drand48() * 20) + 60)
-        var data : [String : String] = ["device-id":deviceID,
-                                    "temperature":temperature,
+        var data : [String : String] = ["temperature":temperature,
                                     "humidity": humidity]
         randomTelem = data.description
         lblLastTemp.text = data["temperature"]
