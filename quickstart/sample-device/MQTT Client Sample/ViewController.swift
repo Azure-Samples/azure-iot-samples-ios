@@ -35,6 +35,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblRcvd: UILabel!
     @IBOutlet weak var lblLastTemp: UILabel!
     @IBOutlet weak var lblLastHum: UILabel!
+    @IBOutlet weak var lblLastRcvd: UILabel!
+    @IBOutlet weak var lblLastSent: UILabel!
+
+
 
     
     var cntSent = 0
@@ -72,29 +76,31 @@ class ViewController: UIViewController {
     
     
     func updateTelem() {
-        let temperature = String(describing: drand48()*15 + 20)
-        let humidity = String(describing: (drand48() * 20) + 60)
+        let temperature = String(format: "%.2f",drand48() * 15 + 20)
+        let humidity = String(format: "%.2f", drand48() * 20 + 60)
         var data : [String : String] = ["temperature":temperature,
                                     "humidity": humidity]
         randomTelem = data.description
         lblLastTemp.text = data["temperature"]
         lblLastHum.text = data["humidity"]
-
     }
+    
+    
     
     /// Sends a message to the IoT hub
     @objc func sendMessage() {
         
-        var message: String!
+        var messageString: String!
 
         updateTelem()
 
         // This the message
-        message = randomTelem
+        messageString = randomTelem
+        lblLastSent.text = messageString
         
         
         // Construct the message
-        let messageHandle: IOTHUB_MESSAGE_HANDLE = IoTHubMessage_CreateFromByteArray(message, message.utf8.count)
+        let messageHandle: IOTHUB_MESSAGE_HANDLE = IoTHubMessage_CreateFromByteArray(messageString, messageString.utf8.count)
         
         if (messageHandle != OpaquePointer.init(bitPattern: 0)) {
             
@@ -186,12 +192,12 @@ class ViewController: UIViewController {
             
             print("Message Id:", messageId, " Correlation Id:", correlationId)
             print("Message:", messageString)
-            mySelf.lblLastTemp.text = messageString
+            mySelf.lblLastRcvd.text = messageString
         }
         else {
             print("Failed to acquire message data")
+            mySelf.lblLastRcvd.text = "Failed to acquire message data"
         }
-        
         return IOTHUBMESSAGE_ACCEPTED
     }
     
