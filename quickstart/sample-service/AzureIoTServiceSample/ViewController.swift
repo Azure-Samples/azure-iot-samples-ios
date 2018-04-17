@@ -8,7 +8,7 @@ import Foundation
 class ViewController: UIViewController {
     //Put you connection string and deviceID here
     //private let connectionString = "[IoTHub Connection String]"
-    private let connectionString = "HostName=iot-test-sdk.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=78HkMBkTDFDWbL9BLZ7tfOLYmBi4tiYe4wpioE10yEg=";
+    private let connectionString = "";
     private var service_client_handle: IOTHUB_SERVICE_CLIENT_AUTH_HANDLE!;
     private var iot_msg_handle: IOTHUB_MESSAGING_HANDLE!;
     
