@@ -11,5 +11,5 @@ target 'AzureIoTServiceSample' do
   # Pods for AzureIoTServiceSample
   pod 'AzureIoTUtility'
   pod 'AzureIoTuAmqp'
-  pod 'AzureIoTHubServiceClient', '0.0.1-preview01'
+  pod 'AzureIoTHubServiceClient'
 end
