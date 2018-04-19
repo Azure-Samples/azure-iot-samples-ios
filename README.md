@@ -15,8 +15,8 @@ This project showcases how to use azure-iot-sdk-c on iOS platform from CocoaPod.
 
 ### Quickstart
 
-[Send telemetry from a device to an IoT hub (Swift)](https://docs.microsoft.com/azure/iot-hub/quickstart-send-telemetry-ios)
-[Send cloud-to-device messages with IoT Hub (Swift)](https://docs.microsoft.com/azure/iot-hub/iot-hub-ios-swift-c2d)
+- [Send telemetry from a device to an IoT hub (Swift)](https://docs.microsoft.com/azure/iot-hub/quickstart-send-telemetry-ios)
+- [Send cloud-to-device messages with IoT Hub (Swift)](https://docs.microsoft.com/azure/iot-hub/iot-hub-ios-swift-c2d)
 
 ## Resources
 
