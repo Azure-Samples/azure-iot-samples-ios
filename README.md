@@ -1,3 +1,9 @@
+---
+services: iot-hub 
+platforms: ios
+author: azure-iot-sdks
+---
+
 # Azure IoT Samples for iOS Platform
 
 azure-iot-samples-iot provides a set of easy-to-understand, continuously-tested samples for connecting to Azure IoT Hub via Azure/azure-iot-sdk-c/CocoaPod
