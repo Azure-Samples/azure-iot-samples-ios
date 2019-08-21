@@ -1,7 +1,11 @@
 ---
-services: iot-hub 
-platforms: ios
-author: azure-iot-sdks
+page_type: sample
+languages:
+- swift
+products:
+- azure
+- iot-hub
+- ios
 ---
 
 # Azure IoT Samples for iOS Platform
