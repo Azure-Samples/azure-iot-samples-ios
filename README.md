@@ -4,8 +4,8 @@ languages:
 - swift
 products:
 - azure
-- iot-hub
-- ios
+- azure-iot-hub
+description: "A set of easy-to-understand, continuously-tested samples for connecting to Azure IoT Hub via Azure/azure-iot-sdk-c/CocoaPod."
 ---
 
 # Azure IoT Samples for iOS Platform
