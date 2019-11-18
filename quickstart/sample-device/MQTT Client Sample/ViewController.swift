@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     private let connectionString = ""
 
     // Select your protocol of choice: MQTT_Protocol, AMQP_Protocol or HTTP_Protocol
-    // Note: HTTP_Protocol is not currently supported
     private let iotProtocol: IOTHUB_CLIENT_TRANSPORT_PROVIDER = MQTT_Protocol
     
     // IoT hub handle
