@@ -9,8 +9,9 @@ target 'MQTT Client Sample' do
   use_frameworks!
 
   # Pods for MQTT Client Sample
-  pod 'AzureIoTUtility', '=1.3.9'
-  pod 'AzureIoTuMqtt', '=1.3.9'
-  pod 'AzureIoTuAmqp', '=1.3.9'
-  pod 'AzureIoTHubClient', '=1.3.9-LTS'
+  pod 'AzureIoTUtility', '=1.3.9=1.3.9-LTS-patch-2'
+  pod 'AzureIoTuMqtt', '=1.3.9=1.3.9-LTS-patch-1'
+  pod 'AzureIoTuAmqp', '=1.3.9=1.3.9-LTS-patch-1'
+  pod 'AzureIoTHubClient', '=1.3.9-LTS-patch-1'
+  pod 'OpenSSL-Universal'
 end
