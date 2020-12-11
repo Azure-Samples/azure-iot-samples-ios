@@ -364,7 +364,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "../../azureiotiosbuild/azureout/include/azureiot ../../azureiotiosbuild/azureout/include";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = arm64;
+				VALID_ARCHS = arm64 arm64e armv7 armv7s x86_64;
 			};
 			name = Release;
 		};
