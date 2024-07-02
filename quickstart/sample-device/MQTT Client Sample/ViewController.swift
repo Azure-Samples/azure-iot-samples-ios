@@ -8,7 +8,7 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    //Put you connection string here
+    //Put your connection string here
     private let connectionString = ""
 
     // Select your protocol of choice: MQTT_Protocol, AMQP_Protocol or HTTP_Protocol
